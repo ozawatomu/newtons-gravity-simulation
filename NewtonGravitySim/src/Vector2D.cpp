@@ -19,13 +19,16 @@ namespace dt{
 	};
 
 	Vector2D Vector2D::to(Vector2D& otherVector2D, long double& magnitude){
-		long double scalar = sqrt(magnitude / (pow(otherVector2D.x - x, 2) - pow(otherVector2D.y - y, 2)));
+		long double scalar = sqrt(pow(magnitude, 2) / (pow(otherVector2D.x - x, 2) + pow(otherVector2D.y - y, 2)));
 		return Vector2D(scalar * (otherVector2D.x - x), scalar * (otherVector2D.y - y));
 	};
 
 	long double Vector2D::distanceTo(Vector2D& otherVector2D){
-		//std::cout << otherVector2D.x - x << std::endl;
 		return sqrt(pow(otherVector2D.x - x, 2) + pow(otherVector2D.y - y, 2));
+	};
+
+	Vector2D Vector2D::multiply(long double multiplier){
+		return Vector2D(x * multiplier, y * multiplier);
 	};
 
 	Vector2D Vector2D::divide(long double divisor){
@@ -33,7 +36,12 @@ namespace dt{
 	};
 
 	void Vector2D::operator+=(Vector2D otherVector2D){
-		x += otherVector2D.getX();
-		y += otherVector2D.getY();
+		x += otherVector2D.x;
+		y += otherVector2D.y;
+	};
+
+	std::ostream& operator<<(std::ostream& out, const Vector2D& vector2D){
+		out << "x = " << vector2D.x << "; y = " << vector2D.y << std::endl;
+		return out;
 	};
 }

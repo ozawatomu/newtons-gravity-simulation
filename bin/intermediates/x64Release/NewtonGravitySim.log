@@ -1,0 +1,14 @@
+﻿  Space.cpp
+  SphericalObject.cpp
+  Main.cpp
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(36,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(36,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(38,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(38,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Vector2D.cpp
+  Generating code
+  142 of 157 functions (90.4%) were compiled, the rest were copied from previous compilation.
+    129 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  NewtonGravitySim.vcxproj -> C:\Users\Tomu\source\repos\NewtonGravitySim\bin\x64Release\NewtonGravitySim.exe

@@ -8,13 +8,13 @@ void Space::addObject(SphericalObject& sphericalObject){
 	objects.push_back(sphericalObject);
 }
 
-void Space::addObject(dt::Vector2D position, double radius, double density, dt::Vector2D velocity){
+void Space::addObject(dt::Vector2D position, long double radius, long double density, dt::Vector2D velocity){
 	objects.push_back(SphericalObject(position, radius, density, velocity));
 }
 
 void Space::update(){
 	auto currentTime = std::chrono::steady_clock::now();
-	long double deltaTimeSeconds = long double(std::chrono::duration_cast <std::chrono::nanoseconds> (currentTime - lastUpdatedTime).count());
+	long double deltaTimeSeconds = ((long double(std::chrono::duration_cast <std::chrono::nanoseconds> (currentTime - lastUpdatedTime).count()))/pow(10, 9))*100000;
 	lastUpdatedTime = currentTime;
 	for(int i = 0; i < objects.size(); i++){
 		std::vector<SphericalObject> otherObjects;

@@ -1,6 +1,6 @@
 #include "SphericalObject.h"
 
-SphericalObject::SphericalObject(dt::Vector2D position, double radius, double density, dt::Vector2D velocity){
+SphericalObject::SphericalObject(dt::Vector2D position, long double radius, long double density, dt::Vector2D velocity){
 	this->position = position;
 	this->radius = radius;
 	this->velocity = velocity;
@@ -17,17 +17,17 @@ void SphericalObject::update(long double& deltaTime, std::vector<SphericalObject
 	for(SphericalObject otherSphericalObject : otherSphericalObjects){
 		long double forceMagnitude = PhysicalConstants::G * getMass() * otherSphericalObject.getMass() / pow(position.distanceTo(otherSphericalObject.position), 2);
 		dt::Vector2D forceDueToCurrentObject = position.to(otherSphericalObject.position, forceMagnitude);
-		//std::cout << position.distanceTo(otherSphericalObject.position) << std::endl;
 		totalForce += forceDueToCurrentObject;
 	}
+	//std::cout << totalForce;
 	dt::Vector2D accelaration = totalForce.divide(getMass());
-	velocity += accelaration.divide(pow(deltaTime, 2));
-	position += velocity.divide(deltaTime);
+	velocity += accelaration.multiply(deltaTime); // convert accelaration to m/s/deltaTime
+	position += velocity.multiply(deltaTime); // convert accelaration to m/deltaTime
 }
 
 void SphericalObject::draw(sf::RenderWindow& window){
-	sf::CircleShape circle(float(radius), 64U);
-	circle.setPosition(position.getX() - radius, position.getY() - radius);
+	sf::CircleShape circle(float(radius), 128U);
+	circle.setPosition(float(position.getX() - radius), float(position.getY() - radius));
 	circle.setFillColor(color);
 	window.draw(circle);
 }
