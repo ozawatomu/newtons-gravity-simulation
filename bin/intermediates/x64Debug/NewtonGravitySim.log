@@ -1,1 +1,6 @@
-﻿
+﻿  Main.cpp
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(51,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(51,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(53,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(53,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  NewtonGravitySim.vcxproj -> C:\Users\Tomu\source\repos\NewtonGravitySim\bin\x64Debug\NewtonGravitySim.exe

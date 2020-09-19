@@ -12,6 +12,14 @@ long double SphericalObject::getMass(){
 	return (density * 4.0 * PhysicalConstants::PI * pow(radius, 3.0)) / 3.0;
 }
 
+void SphericalObject::setMass(long double mass){
+	density = mass / ((4.0 * PhysicalConstants::PI * pow(radius, 3.0)) / 3.0);
+}
+
+void SphericalObject::setColor(int r, int g, int b){
+	color = sf::Color(r, g, b);
+}
+
 void SphericalObject::update(long double& deltaTime, std::vector<SphericalObject>& otherSphericalObjects){
 	dt::Vector2D totalForce;
 	for(SphericalObject otherSphericalObject : otherSphericalObjects){

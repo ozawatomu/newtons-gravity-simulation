@@ -1,14 +1,11 @@
-﻿  Space.cpp
-  SphericalObject.cpp
-  Main.cpp
-C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(36,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(36,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(38,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Tomu\source\repos\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(38,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Vector2D.cpp
+﻿  Main.cpp
+C:\Dev\vs\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(93,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Dev\vs\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(93,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Dev\vs\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(95,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Dev\vs\NewtonGravitySim\NewtonGravitySim\src\Main.cpp(95,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Generating code
-  142 of 157 functions (90.4%) were compiled, the rest were copied from previous compilation.
-    129 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+  8 of 228 functions ( 3.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  NewtonGravitySim.vcxproj -> C:\Users\Tomu\source\repos\NewtonGravitySim\bin\x64Release\NewtonGravitySim.exe
+  NewtonGravitySim.vcxproj -> C:\Dev\vs\NewtonGravitySim\bin\x64Release\NewtonGravitySim.exe

@@ -12,7 +12,9 @@ class SphericalObject{
 public:
 	SphericalObject(dt::Vector2D position, long double radius, long double density = 1.0, dt::Vector2D velocity = dt::Vector2D(0.0, 0.0));
 	long double getMass();
+	void setMass(long double mass);
 	dt::Vector2D getPosition();
+	void setColor(int r, int g, int b);
 	void update(long double& deltaTime, std::vector<SphericalObject>& otherSphericalObjects);
 	void draw(sf::RenderWindow& window);
 };
